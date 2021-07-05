@@ -320,8 +320,22 @@ body {
 }
 
 .accent-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17857;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .accent-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .container {
@@ -1507,8 +1521,16 @@ body {
   background-color: #f5f4fa;
 }
 
+.teams-card .teams-card__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
 @media screen and (min-width: 768px) {
-  .teams-card__list {
+  .teams-card .teams-card__list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -1518,7 +1540,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .teams-card__list {
+  .teams-card .teams-card__list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
