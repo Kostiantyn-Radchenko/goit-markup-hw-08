@@ -1,5 +1,5 @@
 .portofolio-filters {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @include flexWrap;
   justify-content: flex-start;
@@ -15,10 +15,14 @@
     }
   }
   @include forSize(tablets) {
+    margin-bottom: 30px;
     @include flexJust-Center;
     &__item:not(:last-child) {
       margin-right: 8px;
     }
+  }
+  @include forSize(desktop) {
+    margin-bottom: 50px;
   }
 }
 

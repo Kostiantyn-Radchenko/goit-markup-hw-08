@@ -3,6 +3,7 @@
   margin-bottom: 60px;
   @include forSize(desktop) {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 .footer-contacts {

@@ -19,6 +19,12 @@
     gap: 30px;
   }
 }
+.soft-skills__item:not(:last-child) {
+  margin-bottom: 30px;
+  @include forSize(tablets) {
+    margin-bottom: 0;
+  }
+}
 .soft-slills__thumb {
   @include flexCenterCenter;
   width: 100%;

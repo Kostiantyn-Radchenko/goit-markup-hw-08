@@ -25,7 +25,7 @@
   }
 }
 .clients__item:not(:last-child) {
-  @media screen and (max-width: 480px) {
+  @include forSize(minimobile) {
     margin-bottom: 10px;
   }
 }

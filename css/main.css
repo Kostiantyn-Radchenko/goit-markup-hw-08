@@ -325,16 +325,17 @@ body {
   line-height: 1.17857;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
 }
 
 @media screen and (min-width: 1200px) {
   .accent-title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16667;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
 }
 
@@ -625,6 +626,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-left-part {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -659,6 +661,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-right-part {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1056,7 +1059,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479.98px) {
   .clients__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -1428,6 +1431,22 @@ body {
   border-color: #2196f3;
 }
 
+.checkbox-label__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71429;
+    letter-spacing: 0.03em;
+  }
+}
+
 .checkbox-label__icon {
   width: 15px;
   height: 15px;
@@ -1483,6 +1502,16 @@ body {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+  }
+}
+
+.soft-skills__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .soft-skills__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -1782,7 +1811,7 @@ body {
 }
 
 .portofolio-filters {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1809,6 +1838,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .portofolio-filters {
+    margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1818,6 +1848,12 @@ body {
   }
   .portofolio-filters__item:not(:last-child) {
     margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portofolio-filters {
+    margin-bottom: 50px;
   }
 }
 

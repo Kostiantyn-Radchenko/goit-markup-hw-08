@@ -142,6 +142,7 @@
   @include flexCenterCenter;
   margin-bottom: 30px;
 }
+
 .checkbox-label__input {
   @extend %visually-hidden;
 
@@ -152,6 +153,13 @@
     background-position: center;
     background-origin: border-box;
     border-color: $activeColor;
+  }
+}
+.checkbox-label__text {
+  @include fontStyle(500, 12, 14, 3);
+
+  @include forSize(desktop) {
+    @include fontStyle(500, 14, 24, 3);
   }
 }
 .checkbox-label__icon {
