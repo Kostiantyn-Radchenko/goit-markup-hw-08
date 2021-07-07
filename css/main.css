@@ -1720,6 +1720,16 @@ body {
   }
 }
 
+@media screen and (max-width: 479.98px) {
+  .card-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .card-list {
     display: -ms-grid;
@@ -1793,6 +1803,12 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-list__content {
+    height: 146px;
+  }
 }
 
 .card-list__title {

@@ -42,6 +42,10 @@
     @media screen and (max-width: #{$desktop} - 0.02) {
       @content;
     }
+  } @else if ($range == 'minmaxtablets') {
+    @media screen and (min-width: #{$tablets}) and (max-width: 1199px) {
+      @content;
+    }
   }
 }
 // all border
