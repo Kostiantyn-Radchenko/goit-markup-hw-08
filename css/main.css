@@ -1001,7 +1001,7 @@ body {
   }
   .site-nav__link--active::before {
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1788,7 +1788,7 @@ body {
           transform: translateY(100%);
 }
 
-.card-list__content {
+.card-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1796,9 +1796,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  height: 100%;
+}
+
+.card-list__content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
